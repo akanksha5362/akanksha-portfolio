@@ -1,0 +1,2 @@
+Replace this with your actual resume.pdf in the /public folder,
+and it will be served at /resume.pdf (matches site.resumeUrl in src/data/site.ts).

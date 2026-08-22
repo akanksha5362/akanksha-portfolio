@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-ink font-body antialiased;
+    background-image: theme("backgroundImage.grid-glow");
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(16, 185, 129, 0.35);
+    color: #f4f7f5;
+  }
+
+  :focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0f0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e3a5f;
+    border-radius: 999px;
+    border: 2px solid #0a0f0d;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10b981;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-surface/60 backdrop-blur-xl border border-white/[0.08];
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.25em] text-cyan/80;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-ink;
+  }
+
+  .prop-token {
+    @apply font-mono text-[13px] text-ink-dim;
+  }
+
+  .prop-key {
+    @apply text-cyan/90;
+  }
+
+  .prop-value {
+    @apply text-emerald-soft;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html.custom-cursor-active,
+html.custom-cursor-active * {
+  cursor: none !important;
+}
