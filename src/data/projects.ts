@@ -82,6 +82,92 @@ export const projects: Project[] = [
       { label: "Green impact dashboard" },
     ],
   },
+
+  {
+    slug: "smart-attendance-system",
+    name: "Smart Attendance System",
+    tagline: "AI-powered face recognition attendance",
+    summary: "Automatically recognize registered students and mark attendance through a face-recognition-powered dashboard.",
+    featured: true,
+    year: "2026",
+    role: "Solo Developer",
+    status: "Completed",
+    tech: [
+      "Python",
+      "Flask",
+      "OpenCV",
+      "MediaPipe",
+      "SQLite",
+      "JavaScript",
+      "Chart.js"
+    ],
+    githubUrl: "[https://github.com/akanksha5362/smart-attendance-system](https://github.com/akanksha5362/smart-attendance-system)",
+    demoUrl: null,
+    color: "deepblue",
+    features: [
+      "Student registration",
+      "Face sample collection",
+      "Face recognition",
+      "Automatic attendance marking",
+      "Daily attendance tracking",
+      "Attendance statistics",
+      "Weekly attendance analytics",
+      "Student search and filtering",
+      "Student details management",
+      "Face dataset management",
+      "Web-based dashboard"
+    ],
+
+    overview:
+      "Smart Attendance System is a face-recognition-based attendance management application designed to replace manual attendance with an automated workflow. Teachers can register students, collect face samples, start recognition, and automatically record attendance through a centralized web dashboard.",
+    problem:
+      "Manual attendance takes time and can be repetitive, especially in classrooms with many students. The system needed a faster way to identify registered students and maintain accurate attendance records while also providing teachers with an easy-to-use dashboard.",
+    approach: [
+
+      {
+        heading: "Face-based student registration",
+
+        body:
+          "Teachers can enter a student's name, roll number, and department and capture multiple face samples using the computer camera. The samples are stored as the student's recognition dataset."
+      },
+
+      {
+        heading: "Automated face recognition",
+
+        body:
+          "OpenCV is used to detect and recognize registered faces. Once a student is recognized, the system identifies the student and prevents duplicate attendance from being marked on the same day."
+      },
+
+      {
+        heading: "Attendance management",
+
+        body:
+          "Attendance records are stored with the student's name, date, and time. The system verifies that the student is registered before accepting an attendance record."
+      },
+
+      {
+        heading: "Dashboard and analytics",
+
+        body:
+          "A Flask-powered web dashboard provides student management, attendance history, daily statistics, recognition status, and weekly attendance analytics using Chart.js."
+      }
+
+
+    ],
+
+    outcome:
+      "The Smart Attendance System is completed and functional as a local web application. It provides an end-to-end workflow from student registration and face-sample collection to real-time recognition and automatic attendance marking.",
+
+    screenshots: [
+      { label: "Dashboard & recognition status" },
+      { label: "Student registration & face capture" },
+      { label: "Face recognition" },
+      { label: "Attendance records & analytics" }
+    ]
+  },
+
+
+
   {
     slug: "gesture-dr-driving",
     name: "Gesture-Controlled Dr. Driving",

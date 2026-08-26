@@ -3,7 +3,7 @@ export const site = {
   role: "Computer Science Engineering Student",
   tagline: "Flutter Developer & AI/LLM Enthusiast",
   location: "Gwalior, Madhya Pradesh, India",
-  email: "akanksha.sharma.dev@example.com",
+  email: "akkusharma83700@gmail.com",
   github: "https://github.com/akanksha5362",
   linkedin: "https://linkedin.com/in/akanksha-s-07240a33a",
   resumeUrl: "/resume.pdf",
